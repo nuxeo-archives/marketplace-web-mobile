@@ -29,6 +29,8 @@
                 file2="${maven.project.build.directory}/nuxeo-distribution-dm-${nuxeo.distribution.version}.zip"
                 includesfile="${maven.project.build.directory}/includes"
                 excludesfile="${maven.project.build.directory}/excludesfile"
+                ignoreContent="true"
+                ignoreContentPattern=".*SNAPSHOT\\.jar$"
                 patternsetid="sample.versus.cap">
     </nx:zipdiff>
     <unzip src="${maven.project.build.directory}/ear-${marketplace.package.version}.zip"
