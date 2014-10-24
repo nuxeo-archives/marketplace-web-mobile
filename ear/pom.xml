@@ -24,7 +24,7 @@
     -->
     <dependency>
       <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-distribution-dm</artifactId>
+      <artifactId>nuxeo-distribution-cap</artifactId>
       <type>pom</type>
     </dependency>
     <!-- <dependency> -->
@@ -56,7 +56,7 @@
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.mobile</groupId>
-      <artifactId>nuxeo-web-mobile-dm</artifactId>
+      <artifactId>nuxeo-web-mobile-cap</artifactId>
       <version>${nuxeo.mobile.version}</version>
     </dependency>
   </dependencies>
