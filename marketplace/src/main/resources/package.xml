@@ -1,4 +1,4 @@
-<package type="addon" name="nuxeo-web-mobile-dm" version="@VERSION@">
+<package type="addon" name="nuxeo-web-mobile" version="@VERSION@">
   <title>Nuxeo Web Mobile</title>
   <description>
     <p>Nuxeo Web Mobile provides a mobile UI experience to allow user browsing documents through their smartphone.</p>
