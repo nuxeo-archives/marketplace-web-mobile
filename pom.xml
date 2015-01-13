@@ -10,10 +10,10 @@
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo web mobile DM Marketplace packaging</name>
-  <version>1.6.1-SNAPSHOT</version>
+  <version>1.7.0-SNAPSHOT</version>
 
   <properties>
-    <marketplace.package.version>1.6.1-SNAPSHOT</marketplace.package.version>
+    <marketplace.package.version>1.7.0-SNAPSHOT</marketplace.package.version>
     <nuxeo.mobile.version>7.1-SNAPSHOT</nuxeo.mobile.version>
   </properties>
 
