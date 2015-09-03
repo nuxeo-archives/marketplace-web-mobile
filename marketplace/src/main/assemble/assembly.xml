@@ -1,15 +1,10 @@
-<project name="web-mobile-dm-assembly"
-         default="build"
-         xmlns:nx="urn:nuxeo-build"
-         xmlns:artifact="urn:nuxeo-artifact">
+<project name="web-mobile-dm-assembly" default="build" xmlns:nx="urn:nuxeo-build" xmlns:artifact="urn:nuxeo-artifact">
   <taskdef resource="org/nuxeo/build/antlib.xml" uri="urn:nuxeo-build" />
-  <taskdef resource="org/nuxeo/build/artifact/antlib.xml"
-           uri="urn:nuxeo-artifact" />
+  <taskdef resource="org/nuxeo/build/artifact/antlib.xml" uri="urn:nuxeo-artifact" />
 
-  <target name="build" description="Build Nuxeo sample Marketplace package">
+  <target name="build" description="Build Nuxeo web mobile DM Marketplace package">
     <tstamp />
-    <delete failonerror="false"
-            dir="${maven.project.build.directory}/marketplace" />
+    <delete failonerror="false" dir="${maven.project.build.directory}/marketplace" />
     <mkdir dir="${maven.project.build.directory}/marketplace" />
     <copy todir="${maven.project.build.directory}/marketplace">
       <fileset dir="src/main/resources" />
@@ -31,11 +26,11 @@
                 excludesfile="${maven.project.build.directory}/excludesfile"
                 ignoreContent="true"
                 ignoreContentPattern=".*SNAPSHOT\\.jar$"
-                patternsetid="sample.versus.cap">
+                patternsetid="web-mobile-dm.versus.cap">
     </nx:zipdiff>
     <unzip src="${maven.project.build.directory}/ear-${marketplace.package.version}.zip"
            dest="${maven.project.build.directory}/marketplace/install">
-      <patternset refid="sample.versus.cap" />
+      <patternset refid="web-mobile-dm.versus.cap" />
     </unzip>
 
     <zip destfile="${maven.project.build.directory}/${maven.project.artifactId}-${marketplace.package.version}.zip"
