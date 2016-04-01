@@ -3,18 +3,18 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>6.0</version>
+    <version>6.0-HF30-SNAPSHOT</version>
   </parent>
 
   <groupId>org.nuxeo.marketplace.web.mobile</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo web mobile DM Marketplace packaging</name>
-  <version>1.6.0</version>
+  <version>1.6.1-SNAPSHOT-HF30-SNAPSHOT</version>
 
   <properties>
-    <marketplace.package.version>1.6.0</marketplace.package.version>
-    <nuxeo.mobile.version>6.0</nuxeo.mobile.version>
+    <marketplace.package.version>1.6.1-SNAPSHOT-HF30-SNAPSHOT</marketplace.package.version>
+    <nuxeo.mobile.version>6.0-HF30-SNAPSHOT</nuxeo.mobile.version>
   </properties>
 
   <modules>
